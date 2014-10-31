@@ -35,8 +35,8 @@ module VkontakteApi
           
           builder.response :vk_logger
           builder.response :mashify
-          builder.response :oj, preserve_raw: true
-          
+         # builder.response :oj, preserve_raw: true
+          builder.response :json, preserve_raw: true
           builder.adapter VkontakteApi.adapter
         end
       end
